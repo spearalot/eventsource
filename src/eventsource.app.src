@@ -1,0 +1,16 @@
+{application, eventsource,
+ [{description, "An eventsource implementation"},
+  {vsn, "0.1.0"},
+  {registered, [eventsource]},
+  {mod, {eventsource_app, []}},
+  {applications, [kernel, stdlib]},
+  {env, [
+    {backing_mod, eventsource_mem},
+    {hostname, {0,0,0,0}},
+    {port, 54321}
+  ]},
+  {modules, []},
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
